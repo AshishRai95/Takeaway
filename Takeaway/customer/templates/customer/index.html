@@ -1,0 +1,43 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+<div class="bg-image" style=" background-image: url('https://st2.depositphotos.com/3740491/8238/v/950/depositphotos_82386710-stock-illustration-outline-seamless-pattern-with-hand.jpg');
+height: 100vh; ">    
+    <div class="container mb-5">
+   
+        <div class="row justify-content-center mt-1">
+            <div class="col-md-10 col-sm-12 offset-md-0 p-4 text-center ">
+                <br>
+                <h1><b>Online Food Takeaway Service</b></h1>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center mt-1">
+            <div class="card col-md-5 col-sm-12 offset-md-0 p-4 text-center">
+                <h2>Place Your Order!</h2>
+                <a href="{% url 'order' %}"class="btm btn-outline-primary">Order Now!</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row justify-content-center mt-3">
+            <div class="card col-md-4 mr-4">
+                <a href="{% url 'order' %}">
+                <img class="rounded" src="http://localhost:8000/media/menu_images/momo1_Nb0R2Yq.jpg" width="350" height="300"/>  
+                </a>
+                <h3 class="text-center">Steam Momo</h3>
+            </div>
+    
+            <div class="card col-md-4 mr-4">
+                <a href="{% url 'order' %}">
+                    <img class="rounded" src="http://localhost:8000/media/menu_images/momo2_sS4K5hp.jpg" width="350" height="300"/>  
+                </a>
+                <h3 class="text-center">Fry Momo</h3>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
